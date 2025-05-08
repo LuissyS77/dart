@@ -13,7 +13,7 @@ resultado = fibonacci(numero2);
 print("El fibonacci de $numero2 es: $resultado");
 }
 
-int fibonacci(n) {
+int fibonacci(int n) {
   if (n == 0) {
     return 0;
   } else if (n == 1) {
@@ -23,15 +23,16 @@ int fibonacci(n) {
   }
 }
 
-int factorial(numero) {
+int factorial(int numero) {
   if (numero == 0 || numero == 1) {
     return 1;
   } else {
     return numero*factorial(numero - 1);
-  }
-
-  
+  } 
 }
 
-
-
+int factorial2(int n){
+  for (var i = 0; i < n ; i++) {
+    return i * factorial2(i - 1);
+  }
+}
