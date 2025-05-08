@@ -101,7 +101,7 @@ while (continuar){ //ciclo while para continuar el programa
   print("Ingrese el cateto 2: ");
   cateto2=double.parse(stdin.readLineSync()!); //leer un dato de tipo entero
   hipotenusa= sqrt((cateto1*cateto1) + (cateto2*cateto2)); //calculo de la hipotenusa
-  print("La hipotenusa es: ${hipotenusa}"); //imprimir el resultado
+  print("La hipotenusa es: ${hipotenusa.toStringAsFixed(2)}"); //imprimir el resultado
   break;
 
   case 6:
