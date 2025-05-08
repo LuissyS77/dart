@@ -45,12 +45,12 @@ while (continuar){
       print("Ingrese la cantidad de personas: ");
       Personas = int.parse(stdin.readLineSync()!);
       if (Personas > 0) {
-        continuar2 = false; //salir del ciclo
+        continuar2 = false; 
       } else {
         print("La cantidad de personas no puede ser menor o igual a cero.");
       }
     } catch (e) {
-      
+     print("Error: $e"); 
     }
   }
   double dividirtotal = total / Personas;
