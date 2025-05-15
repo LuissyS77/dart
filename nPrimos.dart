@@ -9,18 +9,14 @@ print("Ingresa la cantidad de numero que vas agregar: ");
   for (int i = 0; i < cantidadNumeros; i++) {
     print("Ingresa un numero: ");
     int numero = int.parse(stdin.readLineSync()!);
-
     if (esPrimo(numero)) {
-
       primos.add(numero);
     } else {
-
       noPrimos.add(numero);
     }
   }
   print("Los numeros primos son: $primos");
   print("Los numeros no primos son: $noPrimos");
-
 }
 
 //funcion para calcular si un numero es primo o no

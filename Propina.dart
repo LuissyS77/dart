@@ -20,6 +20,7 @@ void main(){
   } while (cuenta <0 || cuenta == 0); //validar que el monto de la cuenta no sea negativo o cero
 
 bool continuar = true; //variable para continuar el ciclo
+
 while (continuar){
   try {
     print("Ingresa el porcentaje de propina: ");
